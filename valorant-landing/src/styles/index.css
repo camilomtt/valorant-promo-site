@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+  * {
+    box-sizing: border-box;
+    min-width: 0;
+    margin: 0;
+  }
+  body {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    font-weight: 400;
+    background-color: black;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-wrap: balance;
+  }
+  p {
+    text-wrap: pretty;
+  }
+
+  @font-face {
+    font-family: "FoundryGridnik-Bold";
+    src: url("/font/FoundryGridnik-Bold.woff") format("opentype");
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "MyriadPro-Regular";
+    src: url("/font/MyriadPro-Regular.woff") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "ThedusStencilWide-Regular";
+    src: url("/font/ThedusStencilWide-Regular.woff") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    background: #fff;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #1d1d1c;
+    border-radius: 10px;
+  }
+}
+
+
+.contenido_visual{
+  content-visibility: auto;
+}
